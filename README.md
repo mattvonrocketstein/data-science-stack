@@ -1,6 +1,5 @@
 <table>
-  <tr>
-    <td colspan=2><strong>DSNB</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+  <tr><td>dsnb</td><td style="text-align:right">
     <a href=#Preqrequisites>Preqrequisites</a> |
     <a href=#features>Features</a> |
     <a href=#resources>Resources</a> |
@@ -8,27 +7,33 @@
     </td>
   </tr>
   <tr>
-    <td width=15%><img src=img/stack.png style="width:50px"></td>
-    <td>Data Science Notebook</td>
+    <td width=15%>
+      <img src=img/stack.png style="width:50px"></td>
+    <td>Data Science Notebook Template</td>
   </tr>
 </table>
 
-## Inspiration
+## Features
 
-https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook
+* placeholder
+* placeholder
+* placeholder
 
-## Versions and Preqrequisites
+## Preqrequisites
+
+*Software*
+
+[Installing Docker Compose](https://docs.docker.com/compose/install/)
+
+*My Version Info*
 
     $ docker --version
     Docker version 17.03.1-ce, build c6d412e
 
-## Features
-
-## Resources
-
-* [Installing Docker Compose](https://docs.docker.com/compose/install/)
-
 ## Installation
 
-
 ## Running the Code
+
+## Other Resources
+
+* The [allspark notebook](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)
