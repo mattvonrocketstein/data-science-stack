@@ -7,11 +7,12 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebooks:/home/jovyan/work
+      - ./:/home/jovyan/
     tty: true
     build:
       context: .
       dockerfile: Dockerfile
-    command: start-notebook.sh --NotebookApp.base_url=/home/joyvan/work
+    command: start.sh jupyter notebook
+    #--NotebookApp.base_url=/home/joyvan/work
     env_file:
         - .env
