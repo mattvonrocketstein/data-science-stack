@@ -17,7 +17,7 @@ This project is one part playground, one part project skeleton, derived from the
 plus [these](http://drivendata.github.io/cookiecutter-data-science/#directory-structure)
 guidelines for standardizing data science project layouts.
 
-## Preqrequisites
+## Prerequisites
 
 You really just need docker and [docker-compose](https://docs.docker.com/compose/install/).  
 
