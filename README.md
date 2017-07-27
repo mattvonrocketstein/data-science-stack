@@ -1,8 +1,8 @@
 <table>
-  <tr><td>dsnb</td><td style="text-align:right">
-    <a href=#Preqrequisites>Preqrequisites</a> |
-    <a href=#features>Features</a> |
-    <a href=#running-the-code>Running the Code</a>
+  <tr><td colspan=2><strong>dsnb</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=#Prerequisites>Prerequisites</a> |
+    <a href=#Features>Features</a> |
+    <a href=#RunningTheCode>Running the Code</a>
     </td>
   </tr>
   <tr>
@@ -51,6 +51,8 @@ Besides that you get:
     -   graph ops and visualization [networkx](https://networkx.github.io/)
     -   csv loading/summarizing/graphing with [pandas](http://pandas.pydata.org/)
     -   images with [IPython.display](http://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html) and [PIL](http://www.pythonware.com/products/pil/)
+
+<a name=RunningTheCode></a>
 
 ## Running the Code
 
