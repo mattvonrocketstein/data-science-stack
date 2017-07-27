@@ -1,2 +1,6 @@
 migrated
 .bash_history
+.ipynb_checkpoints
+.ipython
+.local
+.cache

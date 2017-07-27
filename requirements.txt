@@ -1,2 +1,4 @@
 nbgraph==0.0.3
 bokeh==0.12.6
+dedupe==1.7.4
+jupyter_dashboards

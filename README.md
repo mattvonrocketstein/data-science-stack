@@ -13,19 +13,26 @@
   </tr>
 </table>
 
+## About
+
+This is a playground / project skeleton inspired by the jupyter [allspark stack](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook),
+plus a [data-science cookie cutter template](http://drivendata.github.io/cookiecutter-data-science/#directory-structure).
+
 ## Features
 
-* placeholder
-* placeholder
-* placeholder
+So what's in the box?  
+
+-   Everything in
+-   placeholder
+-   placeholder
 
 ## Preqrequisites
 
-*Software*
+_Software_
 
 [Installing Docker Compose](https://docs.docker.com/compose/install/)
 
-*My Version Info*
+_My Version Info_
 
     $ docker --version
     Docker version 17.03.1-ce, build c6d412e
@@ -35,5 +42,3 @@
 ## Running the Code
 
 ## Other Resources
-
-* The [allspark notebook](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)
