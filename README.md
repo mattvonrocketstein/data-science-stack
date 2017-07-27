@@ -2,7 +2,6 @@
   <tr><td>dsnb</td><td style="text-align:right">
     <a href=#Preqrequisites>Preqrequisites</a> |
     <a href=#features>Features</a> |
-    <a href=#resources>Resources</a> |
     <a href=#running-the-code>Running the Code</a>
     </td>
   </tr>
@@ -15,30 +14,44 @@
 
 ## About
 
-This is a playground / project skeleton inspired by the jupyter [allspark stack](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook),
-plus a [data-science cookie cutter template](http://drivendata.github.io/cookiecutter-data-science/#directory-structure).
-
-## Features
-
-So what's in the box?  
-
--   Everything in
--   placeholder
--   placeholder
+This project is one part playground, one part project skeleton, derived from the jupyter [allspark stack](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook),
+plus [these](http://drivendata.github.io/cookiecutter-data-science/#directory-structure)
+guidelines for standardizing data science project layouts.
 
 ## Preqrequisites
 
-_Software_
+You really just need docker and [docker-compose](https://docs.docker.com/compose/install/).  
 
-[Installing Docker Compose](https://docs.docker.com/compose/install/)
+If you're having problems, you might be interested to know my version info which is at least confirmed working:
 
-_My Version Info_
+        $ docker --version
+        Docker version 17.03.1-ce, build c6d412e
 
-    $ docker --version
-    Docker version 17.03.1-ce, build c6d412e
+## Features
 
-## Installation
+So what's in the box?  Well, obviously everything already shipping with allspark:
+
+-   Everything in the allspark box:
+-   Jupyter Notebook,
+-   Python 2 and 3, scipy, numpy, pandas
+-   Scala,
+-   R, Spark
+-   lots more
+
+Besides that you get:
+
+-   A [Dockerfile](Dockerfile), used by docker-compose.  Mods on top of allspark are:
+    -   preconfigured to install local [requirements](requirements.txt)
+    -   preconfigured to use SSL and authentication
+    -   preconfigured to enable plugins like [jupyter_dashboards](http://jupyter-dashboards-layout.readthedocs.io/en/latest/getting-started.html)
+-   A [docker-compose.yml](docker-compose.yml) to reduce painful command-line invocations.  Includes
+    -   a jupyter service built from dockerfile, preconfigured with volume for working directory & port forwarding
+    -   a mesos service (not finished yet), ready for mesos client connection from allspark
+-   various jupyter notebook demos & PoCs I've found useful
+    -   graph ops and visualization [networkx](https://networkx.github.io/)
+    -   csv loading/summarizing/graphing with [pandas](http://pandas.pydata.org/)
+    -   images with [IPython.display](http://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html) and [PIL](http://www.pythonware.com/products/pil/)
 
 ## Running the Code
 
-## Other Resources
+Use `docker-compose up dsnb` to bring up the notebook service.  If you make changes to the Dockerfile, add requirements, etc, you'll want to use `docker-compose up --force-recreate --build dsnb`
