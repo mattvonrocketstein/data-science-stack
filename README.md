@@ -1,10 +1,9 @@
-<table>
+<table border=1>
   <tr><td colspan=2><strong>dsnb</strong>&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=#Prerequisites>Prerequisites</a> |
     <a href=#Features>Features</a> |
     <a href=#RunningTheCode>Running the Code</a>
-    </td>
-  </tr>
+    </td></tr>
   <tr>
     <td width=15%>
       <img src=img/stack.png style="width:50px"></td>
